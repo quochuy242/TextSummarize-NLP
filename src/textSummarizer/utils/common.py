@@ -1,4 +1,7 @@
 import os
+
+os.chdir("d:/Python Project/TextSummarize-NLP/src")
+
 from box.exceptions import BoxValueError
 import yaml
 from textSummarizer.logging import logger
