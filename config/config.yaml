@@ -1,7 +1,14 @@
-artifacts_root: D:/Python Project/TextSummarize-NLP/artifacts
+project_dir: &project_dir "D://Python Project//TextSummarize-NLP"
+
+artifacts_root: *project_dir/artifacts
 
 data_ingestion:
-  root_dir: D:/Python Project/TextSummarize-NLP/artifacts/data_ingestion
-  source_URL: https://github.com/quochuy242/Dataset/raw/master/samsum-dataset.zip
-  local_data_file: D:/Python Project/TextSummarize-NLP/artifacts/data_ingestion/data.zip
-  unzip_dir: D:/Python Project/TextSummarize-NLP/artifacts/data_ingestion
+  root_dir: *project_dir/artifacts/data_ingestion
+  source_URL: "https://github.com/quochuy242/Dataset/raw/master/samsum-dataset.zip"
+  local_data_file: *project_dir/artifacts/data_ingestion/data.zip
+  unzip_dir: *project_dir/artifacts/data_ingestion
+
+data_validation:
+  root_dir: *project_dir/artifacts/data_validation
+  STATUS_FILE: *project_dir/artifacts/data_validation/status.txt
+  ALL_REQUIRED_FILES: ['train', 'test', 'val']
