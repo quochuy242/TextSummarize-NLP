@@ -1,4 +1,4 @@
-artifacts_root: artifacts
+artifacts_root: D:/Python Project/TextSummarize-NLP/artifacts
 
 data_ingestion:
   root_dir: D:/Python Project/TextSummarize-NLP/artifacts/data_ingestion
