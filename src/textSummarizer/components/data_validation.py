@@ -13,7 +13,11 @@ class DataValidation:
 
             all_files = os.listdir(
                 os.path.join(
-                    PROJECT_PATH, "artifacts", "data_ingestion", "samsum-dataset"
+                    PROJECT_PATH,
+                    "artifacts",
+                    "data_ingestion",
+                    "summarizer-data",
+                    "samsum_dataset",
                 )
             )
 
