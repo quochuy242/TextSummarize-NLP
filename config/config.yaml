@@ -20,3 +20,10 @@ model_trainer:
   root_dir: D:/Python Project/TextSummarize-NLP/artifacts/model_trainer
   data_path: D:\Python Project\TextSummarize-NLP\artifacts\data_transformation/samsum_dataset
   model_ckpt: google/pegasus-cnn_dailymail
+
+model_evaluation:
+  root_dir: D:/Python Project/TextSummarize-NLP/artifacts/model_evaluation
+  data_path: D:\Python Project\TextSummarize-NLP\artifacts\data_transformation/samsum_dataset
+  model_path: D:\Python Project\TextSummarize-NLP\artifacts\model_trainer\pegasus-samsum-model
+  tokenizer_path: D:\Python Project\TextSummarize-NLP\artifacts\model_trainer\tokenizer
+  metric_file_name: D:/Python Project/TextSummarize-NLP/artifacts/model_evaluation/metric.csv
